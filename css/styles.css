@@ -1,13 +1,18 @@
 body {
-    background-color: #2D2D2D;
+    cbackground-color: #2D2D2D;
     color: #F5F5DC;
     font-family: 'Georgia', serif;
     margin: 0;
     padding: 0;
-    background-image: url(https://i.ytimg.com/vi/h4iCzUzsIaE/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCviREJp9WrJQosSChrxaJWZ6zVbg);
+    cbackground-image: url(https://i.ytimg.com/vi/h4iCzUzsIaE/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCviREJp9WrJQosSChrxaJWZ6zVbg);
     overflow-x: hidden;
+    background-color: #160038;
+    background-image: url("https://www.transparenttextures.com/patterns/black-thread-light.png");
 
 }
+
+
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 
 header {
     text-align: center;
