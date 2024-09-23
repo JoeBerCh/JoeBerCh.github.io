@@ -1,24 +1,18 @@
 body {
-    cbackground-color: #2D2D2D;
+    
     color: #F5F5DC;
     font-family: 'Georgia', serif;
     margin: 0;
-    padding: 0;
-    cbackground-image: url(https://i.ytimg.com/vi/h4iCzUzsIaE/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCviREJp9WrJQosSChrxaJWZ6zVbg);
-    overflow-x: hidden;
+    padding: 5px;       
     background-color: #160038;
     background-image: url("https://www.transparenttextures.com/patterns/black-thread-light.png");
+    text-align: center;
 
 }
 
-
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-
 header {
     text-align: center;
-
-    color: #FFD700;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    color: #FFD700;    
     padding: auto;
 }
 
@@ -46,7 +40,7 @@ header {
 
 #menu .list-container .lists li a {
     text-decoration: none;
-    color: #fff;
+    color: #f8b30e;
     font-size: 19px;
     margin: 0px;
     padding: 5px;
@@ -63,6 +57,7 @@ header {
 }
 
 @media only screen and (max-width:720px) {
+   
 
      /** Navegation Menu **/
      .btn-menu{
@@ -70,33 +65,30 @@ header {
         top: 12px;
         right: 30px;
         display: block;
-        color:#7a2929;
+        color:#f8b30e;
         font-size: 30px;
         cursor: pointer;
     }
     #menu .list-container{
         position: absolute;
-        top: 60px;
-        
-        width: 100%;
-        height: calc(100vh - 60px);
-        background: #000;
-        border-top: 3px solid #fff;
+        top: 60px;               
+        width: 100%;        
+        background: #3b114d;
+        border-top: 2px solid #f8b30e;
     }
     #menu .list-container .lists{
         display: block;
         width: 90%;
-        margin:50px auto;
+        margin: auto;
     }
     #menu .list-container .lists li{
         display: flex;
         justify-content: center;
-        border-bottom: 2px solid #fff;
+        border-bottom: 2px solid #f8b30e;
     }
     #menu .list-container .lists li a{
-        margin:5px 0px;
+        margin:5px 50px;
     }
-
 }
 
 nav ul {
@@ -131,9 +123,6 @@ main {
 /* Botones */
 button {
     background-color: #FFD700;
-    /* Dorado */
-    color: #a09595;
-    /* Texto oscuro */
     border: none;
     padding: 15px 30px;
     font-size: 1.2rem;
@@ -151,16 +140,15 @@ button:hover {
 }
 
 /* Estilos para la sección de cartas aleatorias */
-#random-card {
-    background-color: #2c1059;
-    /* Fondo azul oscuro */
+#random-card {        
     padding: 30px;
     border-radius: 20px;
     text-align: center;
+    margin: 20%;
+    background-image: url(https://significado.com/contenido/imp/ciencia-de-las/Constelaciones-orion.jpg);    
 }
 
-.card-display {
-    background-image: url(https://significado.com/contenido/imp/ciencia-de-las/Constelaciones-orion.jpg);
+.card-display {    
     padding: 20px;
     border-radius: 10px;
     align-content: center;
@@ -168,14 +156,14 @@ button:hover {
     margin: auto;
 }
 
-#random-card img {
+#random-card img {    
     max-width: 150px;
     margin: auto;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-#random-card p {
+#random-card p {    
     color: #FFD700;
     font-size: 1.3rem;
 }
@@ -260,6 +248,7 @@ header,
 footer,
 blockquote {
     animation: fadeIn 1.5s ease-in-out;
+    padding: auto;
 }
 
 
@@ -269,34 +258,9 @@ blockquote {
     background-color: rgb(50, 50, 50);
     box-shadow: 2px 2px 10px rgba(195, 183, 183, 0.5);
     border-radius: 15px;
-
+    background-image: url(https://significado.com/contenido/imp/ciencia-de-las/Constelaciones-orion.jpg);
 }
 
-.redes {
 
-    align-items: center;
-    padding: 0;
-    list-style: none;
-    margin: 0;
-    border-radius: 15px;
-}
 
-.social .redes:first-child {
-    background-image: linear-gradient(10deg,
-            rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.5)), url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fes.vecteezy.com%2Fvectores-gratis%2Flogo-facebook&psig=AOvVaw1-gWO9i_zvRY-p7vNwfQnr&ust=1726872205318000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKiVk7aK0IgDFQAAAAAdAAAAABAE");
-
-}
-
-.social .redes:nth-child(2) {
-    background-image: linear-gradient(0deg,
-            rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.5)), url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fes.wikipedia.org%2Fwiki%2FInstagram&psig=AOvVaw2BwBqLUBljDmoSfykcrupA&ust=1726872243102000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCPiah8mK0IgDFQAAAAAdAAAAABAJ");
-}
-
-.social .redes:nth-child(3) {
-    background-image: linear-gradient(0deg,
-            rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.5)), url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.tiktok.com%2F&psig=AOvVaw03BM2KTZWayDE77dSmAw0T&ust=1726872267513000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCNDYutOK0IgDFQAAAAAdAAAAABAE");
-}
 
