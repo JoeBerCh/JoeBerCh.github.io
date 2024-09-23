@@ -56,7 +56,7 @@ const caption = document.querySelector('#caption');
 btnMenu.addEventListener('click', () => {
 
     if (on_off) {
-        menu.style.left = "0";
+        menu.style.left = "auto";
         menu.style.transition = "300ms";
         on_off = false;
     } else {
