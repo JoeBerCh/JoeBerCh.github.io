@@ -34,7 +34,6 @@ const tarotCards = [
 function drawRandomCard() {
     const randomIndex = Math.floor(Math.random() * tarotCards.length);
     const selectedCard = tarotCards[randomIndex];
-
     document.getElementById('cardImage').src = selectedCard.image;
     document.getElementById('cardImage').alt = selectedCard.name;
     document.getElementById('cardMessage').textContent = selectedCard.message;
@@ -54,7 +53,6 @@ const caption = document.querySelector('#caption');
 
 // Responsive Menu
 btnMenu.addEventListener('click', () => {
-
     if (on_off) {
         menu.style.left = "auto";
         menu.style.transition = "300ms";
@@ -65,7 +63,6 @@ btnMenu.addEventListener('click', () => {
         menu.style.transition = "300ms";
         on_off = true;
     }
-
 });
 
 // Gallery
@@ -79,9 +76,7 @@ gallery.forEach((images) => {
 
         imgModal.src = srcImg;
         caption.innerHTML = altImg;
-
     });
-
 });
 
 // Close Modal

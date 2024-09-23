@@ -1,9 +1,7 @@
-body {
-    
+body {    
     color: #F5F5DC;
     font-family: 'Georgia', serif;
-    margin: 50px;
-        
+    margin: 50px;        
     background-color: #160038;
     background-image: url("https://www.transparenttextures.com/patterns/black-thread-light.png");
     text-align: center;
@@ -19,9 +17,7 @@ header {
 /* Navegación */
 #menu {
     background-color: #1A1A40;
-    /* Fondo azul oscuro */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    /* Sombra */
     border-radius: 20px;
     width: 100%;
     display: flex;
@@ -34,8 +30,7 @@ header {
     text-decoration: none;
     color: #f8b30e;
     font-size: 19px;
-    margin: 0px;
-    
+    margin: 0px;    
     border-radius: 3px;
     transition: 300ms;
 }
@@ -49,7 +44,6 @@ header {
 }
 
 @media only screen and (max-width:720px) {   
-     /** Navegation Menu **/
      .btn-menu{
         position: absolute;
         top: 12px;
@@ -59,6 +53,7 @@ header {
         font-size: 30px;
         cursor: pointer;
     }
+
     #menu .list-container{
         position: absolute;
         top: 50px;               
@@ -67,15 +62,13 @@ header {
         border-top: 2px solid #f8b30e;
         border-radius: 20px;
     }
+
     #menu .list-container .lists{
         display: block;
-        padding: 0;
-        
-        
-        margin: 10px;
-        
-        
+        padding: 0;                
+        margin: 10px;                
     }
+    
     #menu .list-container .lists li{
         display: flex;
         justify-content: center;
@@ -86,34 +79,23 @@ header {
     }
 }
 
-
 nav ul li {
     display: inline-block;
     padding: auto;
-
     margin: 10px;
-
 }
 
 nav ul li a {
     color: #FFD700;
     text-decoration: none;
     font-size: 1.3rem;
-    transition: color 0.3s ease;
-    
+    transition: color 0.3s ease;    
 }
 
 nav ul li a:hover {
     color: #E6E6FA;
     text-decoration: underline;
 }
-
-/* Sección principal */
-main {
-    
-    background-size: 100%;
-}
-
 /* Botones */
 button {
     background-color: #FFD700;
@@ -134,8 +116,7 @@ button:hover {
 }
 
 /* Estilos para la sección de cartas aleatorias */
-#random-card {        
-    
+#random-card {            
     border-radius: 20px;
     text-align: center;
     margin: auto;
@@ -143,8 +124,7 @@ button:hover {
     background-image: url(https://significado.com/contenido/imp/ciencia-de-las/Constelaciones-orion.jpg);    
 }
 
-.card-display {    
-    
+.card-display {        
     border-radius: 10px;
     align-content: center;
     text-align: center;
@@ -232,26 +212,18 @@ footer p {
 }
 
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
+    from {opacity: 0;}
+    to {opacity: 1;}
 }
 
-section,
-header,
-footer,
-blockquote {
+section,header,footer,blockquote {
     animation: fadeIn 1.5s ease-in-out;
     padding: 0;
 }
 
 #contact{    
-    margin: 20px 300px;                 
-    padding: 10px;
+    margin: 10px auto;                 
+    padding: 10px 20px;
     justify-content: space-between; 
 }
 
@@ -263,8 +235,6 @@ blockquote {
 }
 
 /** Gallery **/
-
-
 .gallery-content{
     background-image: url(https://significado.com/contenido/imp/ciencia-de-las/Constelaciones-orion.jpg);   
     width: 90%;
@@ -272,13 +242,10 @@ blockquote {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 230px);
-    grid-gap: 15px;
-    
-    
+    grid-gap: 15px;        
 }
 .gallery-content .img-card{
-    width: 100%;
-    
+    width: 100%;    
 }
 .gallery-content .img-card img{
     width: 100%;
@@ -299,8 +266,7 @@ blockquote {
     cursor: pointer;
     display:none;
 }
-.modal #imgModal{
-    
+.modal #imgModal{    
     margin:50px auto;
     height: 75%;
     display: block;
