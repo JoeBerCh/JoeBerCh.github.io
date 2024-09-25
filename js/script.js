@@ -83,3 +83,10 @@ gallery.forEach((images) => {
 document.querySelector('#closeModal').addEventListener('click', () => {
     modal.style.display = "none";
 });
+
+const btnswitch = document.querySelector('#switch');
+
+btnswitch.addEventListener('click', () => {
+    document.body.classList.toggle('dark');
+    btnswitch.classList.toggle('active');
+});

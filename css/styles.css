@@ -6,12 +6,23 @@ body {
     background-image: url("https://www.transparenttextures.com/patterns/black-thread-light.png");
     text-align: center;
     text-justify: justify;
+    transition: .3s ease all;
+    
+
+}
+.dark{
+    background-color:#230650fd;
+    background-image: url("https://www.transparenttextures.com/patterns/black-thread-light.png");
+    color: #d8d8c8;
+}
+.dark header {    
+    color: #cbb433;       
 }
 
 header {
     text-align: center;
     color: #FFD700;    
-    padding: auto;
+    padding: auto 10px;
 }
 
 /* Navegación */
@@ -25,10 +36,12 @@ header {
     align-items: center;
     z-index: 9999;    
 }
-
+.btn-menu{
+    display: none;
+}
 #menu .list-container .lists li a {
     text-decoration: none;
-    color: #f8b30e;
+    color: #FFD700;
     font-size: 19px;
     margin: 0px;    
     border-radius: 3px;
@@ -36,15 +49,15 @@ header {
 }
 
 #menu .list-container .lists li a:hover {
-    color: #f8b30e;
+    color: #FFD700;
 }
 
 #menu .list-container .lists li a.active {
-    color: #f8b30e;
+    color: #FFD700;
 }
 
 @media only screen and (max-width:720px) {   
-     .btn-menu{
+    .btn-menu{
         position: absolute;
         top: 12px;
         right: 30px;
@@ -65,7 +78,7 @@ header {
 
     #menu .list-container .lists{
         display: block;
-        padding: 0;                
+        padding: 0 ;                
         margin: 10px;                
     }
     
@@ -77,6 +90,7 @@ header {
     #menu .list-container .lists li a{
         margin:5px 50px;
     }
+    
 }
 
 nav ul li {
@@ -109,7 +123,7 @@ button {
 }
 
 button:hover {
-    background-color: #E6E6FA;
+    
     /* Cambia a lavanda en hover */
     transform: scale(1.05);
     /* Efecto de agrandamiento */
@@ -119,10 +133,12 @@ button:hover {
 #random-card {            
     border-radius: 20px;
     text-align: center;
-    margin: auto;
+    margin: 80px 100px;
     padding: 10px;
     background-image: url(https://significado.com/contenido/imp/ciencia-de-las/Constelaciones-orion.jpg);    
+    background-size: cover;
 }
+
 
 .card-display {        
     border-radius: 10px;
@@ -143,8 +159,8 @@ button:hover {
     font-size: 1.3rem;
 }
 
-#services{
-    text-align: justify;
+#services ul{
+    text-align: left;
 }
 /* Testimonios */
 blockquote {
@@ -290,7 +306,50 @@ section,header,footer,blockquote {
     transition: 200ms;
 }
 
+.switch{    
+    background: #4B0082; 
+    border-radius: 1000px;
+    border: none;
+    position: absolute;
+    cursor: pointer;
+    display: flex;
+    outline: none;
+    top: 13px;
+    right: 70px;    
+    width: 15px;
+    height: 15px;   
+}
 
+.switch span {
+    line-height: 15px;
+    display: block;
+    background: none;
+    color: #fff;
+    position: relative;
+    top: -10px;
+    right: 19px;
+}
 
+.switch::after{
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background: #F1F1F1;
+    top: 0;
+    left: unset;
+    right: 0;
+    border-radius: 100px;
+    transition: .3s ease all;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+    content: "";
+}
+.switch.active::after{     
+    right: unset;
+    left: 0;    
+}
 
-
+.switch.active{     
+    background: #FFD700;
+    
+}
