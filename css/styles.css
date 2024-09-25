@@ -10,6 +10,7 @@ body {
     
 
 }
+
 .dark{
     background-color:#230650fd;
     background-image: url("https://www.transparenttextures.com/patterns/black-thread-light.png");
@@ -130,10 +131,13 @@ button:hover {
 }
 
 /* Estilos para la sección de cartas aleatorias */
-#random-card {            
+#random-card {     
+    min-width: 150px;
+    min-height: 300px;       
+    display: block;
     border-radius: 20px;
     text-align: center;
-    margin: 80px 100px;
+    margin: auto;
     padding: 10px;
     background-image: url(https://significado.com/contenido/imp/ciencia-de-las/Constelaciones-orion.jpg);    
     background-size: cover;
@@ -148,15 +152,20 @@ button:hover {
 }
 
 #random-card img {    
-    max-width: 150px;
+    width: 150px;
+    height: 300px;
     margin: auto;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
+#cardImage{
+    width: 150px;
+    height: 300px;
+}
 
 #random-card p {    
     color: #FFD700;
-    font-size: 1.3rem;
+    
 }
 
 #services ul{
